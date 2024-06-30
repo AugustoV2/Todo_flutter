@@ -1,3 +1,4 @@
+import 'package:app1/widgets/todo_items.dart';
 import 'package:flutter/material.dart';
 
 class home extends StatelessWidget {
@@ -36,7 +37,12 @@ class home extends StatelessWidget {
                     child: Text(
                       'Tasks',
                       style: TextStyle(fontSize: 30),
-                    ))
+                    )),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      top: 20), // Adds 20 pixels of vertical space
+                ),
+                TodoItems(),
               ],
             ))
           ],
