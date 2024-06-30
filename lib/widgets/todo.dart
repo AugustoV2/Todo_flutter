@@ -25,6 +25,21 @@ class Todo {
         id: '3',
         title: 'Buy Bread',
         isDone: false,
+      ),
+      Todo(
+        id: '4',
+        title: 'paDIKK',
+        isDone: false,
+      ),
+      Todo(
+        id: '5',
+        title: 'maIL',
+        isDone: false,
+      ),
+      Todo(
+        id: '6',
+        title: 'Watch',
+        isDone: false,
       )
     ];
   }

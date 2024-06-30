@@ -10,12 +10,11 @@ class TodoItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         margin: EdgeInsets.only(top: 50),
-        color: Color.fromARGB(255, 255, 255, 255),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: Color.fromARGB(255, 248, 244, 244),
               blurRadius: 10,
               offset: Offset(0, 5),
             )

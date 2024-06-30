@@ -15,7 +15,7 @@ class home extends StatelessWidget {
           children: [
             Icon(
               Icons.menu,
-              color: Color.fromARGB(255, 16, 3, 3),
+              color: Color.fromARGB(255, 247, 246, 246),
               size: 30,
             ),
             Container(
@@ -61,7 +61,7 @@ class home extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.5),
+                    color: Color.fromARGB(255, 10, 10, 10).withOpacity(0.5),
                     spreadRadius: 5,
                     blurRadius: 7,
                     offset: Offset(0, 3),
@@ -103,7 +103,8 @@ class home extends StatelessWidget {
         decoration: InputDecoration(
           hintText: 'Search',
           hintStyle: TextStyle(color: Colors.white),
-          prefixIcon: Icon(Icons.search, color: Colors.white),
+          prefixIcon:
+              Icon(Icons.search, color: Color.fromARGB(255, 11, 10, 10)),
           border: InputBorder.none,
         ),
       ),
