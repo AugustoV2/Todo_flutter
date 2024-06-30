@@ -1,25 +1,42 @@
 import 'package:flutter/material.dart';
+import 'package:app1/widgets/todo.dart';
 
 class TodoItems extends StatelessWidget {
-  bool check = false;
+  final Todo todo;
+
+  TodoItems({required this.todo});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color.fromARGB(255, 142, 136, 136),
-
-        //margin: const EdgeInsets.only(top: 50),
+        margin: EdgeInsets.only(top: 50),
+        color: Color.fromARGB(255, 255, 255, 255),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+              color: Color.fromARGB(255, 0, 0, 0),
+              blurRadius: 10,
+              offset: Offset(0, 5),
+            )
+          ],
+        ),
         child: ListTile(
           onTap: () {
             print('Tapped');
           },
           leading: IconButton(
-            icon: const Icon(Icons.check_sharp),
+            icon: const Icon(Icons.rectangle_outlined),
             onPressed: () {
-              print('Deleted');
+              bool check = true;
+
+              if (check == true) {
+                check = false;
+              }
+              print('tapped');
             },
           ),
-          title: const Text('PAddi cheak', style: TextStyle(fontSize: 20)),
+          title: Text(todo.title ?? '', style: TextStyle(fontSize: 20)),
           trailing: IconButton(
             icon: const Icon(Icons.delete),
             onPressed: () {
